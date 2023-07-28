@@ -1,0 +1,29 @@
+/* 768px 992px 1200px 1400px */
+
+@media (min-width:768px){
+    :root{
+        --cn-gap:100px;
+        --cnf-gap:25px;
+    }
+}
+
+@media (min-width:992px){
+    :root{
+        --cn-gap:150px;
+        --cnf-gap:25px;
+    }
+}
+
+@media (min-width:1200px){
+    :root{
+        --cn-gap:250px;
+        --cnf-gap:63px;
+    }
+}
+
+@media (min-width:1400px){
+    :root{
+        --cn-gap:350px;
+        --cnf-gap:88;
+    }
+}
