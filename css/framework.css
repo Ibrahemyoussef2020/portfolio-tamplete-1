@@ -1,0 +1,138 @@
+:root{
+
+    /* units */
+
+    --cn-gap:25px;
+    --cnf-gap:10px;
+
+    --xs-rem:1rem;
+    --sm-rem:1.5rem;
+    --md-rem:2rem;
+    --lg-rem:3rem;
+    --xl-rem:4rem;
+
+    /* min width */
+
+    --width-3:100px;
+    --width-2:min(350px,100%);
+
+    /* font weight */
+    --fw-bold:700;
+    /* font family */
+    --ff-primary:'Roboto', sans-serif;
+
+    /* colors */
+
+    --clr-primary:#2dcc70;
+    --clr-secondary:#252f31;
+
+    --clr-light-100:#fff;
+    --clr-light-50:#f2f2f2;
+
+    --clr-dark-100:#191e22;
+    --clr-dark-50:#252e30;
+    --clr-dark-25:#555;
+    --clr-dark-25:#6a6e71;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-primary);
+}
+
+/*********** reset & element *********/
+
+ul{
+    list-style: none;
+    margin-block-start:0;
+    margin-block-end:0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start:0;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+button,i,.clickable{
+    cursor: pointer;
+}
+
+/*********** classes *********/
+.flex{
+    display: flex;
+}
+.js-between{
+    justify-content: space-between;
+}
+
+.bg-hight{
+    background: var(--clr-light-100);
+}
+
+.bg-gray{
+    background:var(--clr-light-50);
+}
+
+/********* components ********/
+.container,
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: var(--md-rem ) auto;
+    gap: var(--sm-rem) var(--xs-rem);
+}
+
+.container{
+    width: calc(100% - var(--cn-gap));
+}
+
+.container-fluid{
+    width: calc(100% - var(--cnf-gap));
+}
+
+.flex-min-w{
+    flex: 1;
+    min-width: var(--width-2);
+}
+
+.btn{
+    font-weight: var(--fw-bold);
+    color:inherit;
+    outline-color: transparent;
+    border: none;
+}
+
+.btn--primary-outlined{
+    color: var(--clr-primary);
+    border:3px solid var(--clr-primary);
+    background: transparent;
+}
+
+.btn--primary-outlined:hover,
+.btn--primary-outlined::selection{
+    color: var(--clr-light-100);
+    border:3px solid var(--clr-primary);
+    background:var(--clr-primary);
+}
+
+.btn--primary-solid{
+    color: var(--clr-light-100);
+    border:3px solid var(--clr-primary);
+    background:var(--clr-primary);
+}
+
+.btn--primary-solid:hover,
+.btn--primary-solid::selection{
+    color:var(--clr-primary);
+    border:3px solid var(--clr-primary);
+    background:transparent;
+}
