@@ -1,0 +1,334 @@
+:root{
+
+    /* units */
+
+    --cn-gap:25px;
+    --cnf-gap:10px;
+
+    --xs-rem:1rem;
+    --sm-rem:1.5rem;
+    --md-rem:2rem;
+    --lg-rem:3rem;
+    --xl-rem:4rem;
+
+    /* min width */
+
+    --width-3:100px;
+    --width-2:min(350px,100%);
+
+    /* z-index */
+
+    --index-1:1;
+    --index-2:2;
+    --index-3:3;
+
+    /* font weight */
+    --fw-bold:700;
+    /* font family */
+    --ff-primary:'Roboto', sans-serif;
+    /* font sizes */
+    --fs-title-1:clamp(1.3rem , 5vw , 4rem);
+
+    /* colors */
+
+    --clr-primary:#2dcc70;
+    --clr-secondary:#252f31;
+
+    --clr-light-100:#fff;
+    --clr-light-50:#f2f2f2;
+
+    --clr-dark-100:#191e22;
+    --clr-dark-50:#252e30;
+    --clr-dark-75:#555;
+    --clr-dark-25:#6a6e71;
+}
+/******** header **********/
+body{height: 3000px;}
+/*slider*/
+
+.slider{
+    height: calc(100vh - 60px);
+    background: red;
+    padding:50px;
+}
+
+.slider .slider_picture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--index-1 , 1);
+}
+
+.intro{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:var(--index-2 , 2);
+    width:max-content;
+}
+
+.intro .intro__heading{
+    padding: 5px;
+    font-size: var(--fs-title-1);
+    font-style: italic;
+    border-top: 5px solid var(--clr-light-100);
+    border-bottom: 5px solid var(--clr-light-100);
+    color:var(--clr-light-100);
+    transition: animation .8s ease-in-out , transform .3s ease-in-out;
+}
+
+.intro h2:hover{
+    transform:scaleX(.5);
+}
+
+.intro button{
+    padding:var(--xs-rem) var(--xl-rem);
+    background: transparent;
+    color:var(--clr-light-100);
+    border: 3px solid var(--clr-light-100);
+    transition:color .8s , background-color .8s ;
+}
+
+.intro button:hover,
+.intro button::selection{
+    color: var(--clr-primary,#2dcc70);
+    background: var(--clr-light-100);
+}
+
+/*nav*/
+.navbar{
+    position: relative;
+    background:var(--clr-secondary);
+    color: var(--clr-light-100);
+    height: 60px;
+    cursor: grab;
+}
+
+.navbar .container{
+    height: 100%;
+    display: flex;
+    align-items:center;
+    margin:0 auto var(--md-rem );
+}
+
+
+.navbar::before{
+    content: '';
+    position: absolute;
+    top:-20px;
+    left: 0;
+    width:70%;
+    min-width: 270px;
+    height: 60px;
+    background: var(--clr-secondary);
+    border-top-right-radius: 50%;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    z-index:var(--index-1);
+}
+
+.navbar:hover::before{
+    height: 90px;
+    max-width: 50%;
+    top: -35px;
+    left: 25%;
+}
+
+.logo{
+    position: relative;
+    z-index:var(--index-1,1);
+}
+
+.logo span{
+    color: var(--clr-primary,#2dcc70);
+    margin-left:5px;
+}
+
+.links__menu{
+    position: relative;
+    z-index: var(--index-3,3);
+}
+
+.links__list{
+    position: absolute;
+    top: var(--lg-rem);
+    left:0 ;
+    width: 100%;
+    flex-direction: column; 
+    padding:var(--sm-rem);
+    gap:var(--md-rem);
+    background: #000;
+    transition:transform 1.2s ease-in-out;
+    transform-origin:top center;
+    transform: scale3d(1,0,1);
+    z-index:var(--index-1 ,1);
+}
+
+.visible-list{
+    transform: scale3d(1,1,1);
+}
+
+.link-item:hover,
+.link-item::selection{
+    color:var(--clr-primary,#2dcc70);
+    font-style: italic;
+}
+
+/*********************** some-info ******************/
+
+.some-info .container{
+    gap: var(--lg-rem,1rem) var(--md-rem,1.5rem);
+}
+/* hsla(0, 38%, 87% , .5) */
+.some-info article {
+    flex: 1;
+    min-width:300px;
+    padding: var(--xs-rem , 1rem) var(--sm-rem , 1.5rem);
+    border:2px solid var(--clr-secondary);
+    border-radius: 1rem;
+}
+
+.some-info hr{
+    height: 2px;
+    width: 25%;
+    min-width: 70px;
+    border: none;
+    margin: var(--xs-rem , 1rem) auto var(--xs-rem , 1rem) 0 ;
+    background:var(--clr-primary,#2dcc70);
+}
+
+.some-info h2{
+    color: var(--clr-dark-25 , #555);
+    font-weight: 900;
+}
+
+.some-info p{
+    transition: color .3s linear , font-weight .7s linear;
+}
+
+.some-info p:hover{
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark-50);
+}
+
+/******************** about ******************/
+.about {
+    padding: var(--sm-rem , 1rem);
+    gap: var(--sm-rem , 1rem);
+    flex-direction: column;
+}
+
+
+.about__picture{
+   /* max-width:33%; */
+    max-width: 100%;
+}
+
+.about__articles{
+    display: grid;
+    gap: var(--sm-rem);
+    grid-template-columns: 1fr 1fr;
+
+    padding: var(--sm-rem , 1.5rem) 1rem;
+    background: var(--clr-light-50 , #f2f2f2);
+}
+
+.about__lg-article{
+    grid-column: 1 / -1;
+}
+.about__sm-article{
+   /* grid-column: auto / span 1; */
+    grid-column: auto / span 2; 
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.about__sm-article img{
+    grid-column: 1 / span 1;
+    grid-row: 1 / -1;
+}
+.about__sm-article p{
+    grid-column: 2 / span 1;
+}
+
+/****************** skills ***************/
+.skills .container {
+    gap:var(--lg-rem,2rem) var(--sm-rem ,1.5rem);
+    flex-direction: column;
+}
+
+.skills .container  > * {
+    flex:1;
+}
+
+.skills__content{
+    max-width: 600px;
+}
+
+.skills__progress{
+    max-width: 300px;
+}
+
+.skill div{
+    position: relative;
+    height:var(--xs-rem , 1rem);
+    padding-right:var(--xs-rem , 1rem);
+    margin-bottom: 1rem;
+
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    background:var(--clr-light-50,#6a6e71);
+    overflow: hidden;
+}
+
+.skill div:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--clr-primary , #2dcc70);
+}
+
+.skill div span{
+    position: absolute;
+    top:0;
+    font-size: .828rem;
+    color: var(--clr-light-100,#fff);
+    z-index: var(--index-2 , 2);
+}
+
+
+.skill--html div:after{
+    width: 110%;
+}
+.skill--html div span{
+    left:90%;
+}
+
+
+.skill--css div:after{
+    width: 110%;
+}
+.skill--css div span{
+    left:90%;
+}
+
+
+.skill--photoshop div:after{
+    width: 70%;
+}
+.skill--photoshop div span{
+    left: 60%;
+}
+
+
+.skill--jquery div:after{
+    width:60%;
+}
+.skill--jquery div span{
+    left:50%;
+}
+
