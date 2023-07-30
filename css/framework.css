@@ -54,6 +54,10 @@ body{
     overflow-x: hidden;
 }
 
+body > section {
+    margin-bottom: var(--xl-rem,4rem);
+}
+
 /*********** reset & element *********/
 
 ul{

@@ -43,7 +43,8 @@
     --clr-dark-25:#6a6e71;
 }
 /******** header **********/
-body{height: 3000px;}
+
+
 /*slider*/
 
 .slider{
@@ -346,4 +347,52 @@ body{height: 3000px;}
 
 .resume button{
     padding:var(--xs-rem);
+}
+
+/*********** education experience ***********/
+
+.education--experience .container{
+    gap:var(--sm-rem,1.5rem);
+    display: flex;
+    overflow: hidden;
+}
+
+.education--experience-hr{
+    height:5px;
+    width: 70%;
+    min-width:300px;
+    margin-bottom:var(--lg-rem, 4rem);
+    border: none;
+    border-radius:10px;
+    background:var(--clr-primary,#2dcc70);
+}
+
+.education--experience p{
+    max-width:400px;
+}
+
+.education--experience__main-article p:first-of-type{
+    margin: var(--sm-rem,1.5rem) 0 var(--lg-rem,3rem) 0;
+}
+
+/* foundations */
+
+.education--experience__foundations article{
+    margin-bottom: var(--md-rem);
+}
+
+.education--experience__foundations .primary-span{
+    display: inline-block;
+    padding: 5px .5rem;
+    margin:.5rem 0;
+    font-weight: var(--fw-bold);
+    font-size: .828rem;
+    color: var(--clr-light-100,#fff);
+    background:var(--clr-primary,#2dcc70);
+    
+}
+
+.education--experience__foundations hr{
+    max-width: 300px;
+    margin: var(--xs-rem , 1rem) auto var(--xs-rem , 1rem) 0 ;
 }
