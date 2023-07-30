@@ -332,3 +332,18 @@ body{height: 3000px;}
     left:50%;
 }
 
+
+/*********** resume ***************/
+
+.resume{
+    padding:var(--md-rem,2rem) var(--lg-rem,3rem);
+    background: var(--clr-light-50);
+}
+
+.resume h2{
+    margin-bottom: -.7rem;
+}
+
+.resume button{
+    padding:var(--xs-rem);
+}

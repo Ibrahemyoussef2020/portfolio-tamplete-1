@@ -94,6 +94,7 @@ p{
 h2:not(.intro__heading),h3,h4{
     margin-top: 0;
     margin-bottom: 0.6rem;
+    color:var(--clr-dark-25 , #555);
 }
 
 p:not(.special-p){
