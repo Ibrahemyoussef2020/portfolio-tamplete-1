@@ -1,0 +1,44 @@
+/* header animation */
+
+@keyframes scalable-intro-anime {
+    0% {
+        transform:scaleX(1.5);
+    }
+    25% {
+        transform:scaleX(.5);
+    }
+    50% {
+        transform:scaleX(1.2);
+    }
+    100% {
+        transform:scaleX(1);
+    }
+}
+
+/* back home */
+
+@keyframes back-home {
+    to{
+        transform: translate(0);
+    }
+}
+
+/* rotate home */
+
+@keyframes rotate-home {
+    0%{
+        transform: translateX(-38%)rotateZ(-180deg);
+    }
+    25%{
+        transform: translateX(-26%)rotateZ(-90deg);
+    }
+    50%{
+        transform: translateX(-14%)rotateZ(-30deg);
+    }
+    100%{
+        transform: translateX(0)rotateZ(0deg);
+    }
+}
+
+
+
