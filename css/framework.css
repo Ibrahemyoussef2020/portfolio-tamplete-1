@@ -16,10 +16,18 @@
     --width-3:100px;
     --width-2:min(350px,100%);
 
+    /* z-index */
+
+    --index-1:1;
+    --index-2:2;
+    --index-3:3;
+
     /* font weight */
     --fw-bold:700;
     /* font family */
     --ff-primary:'Roboto', sans-serif;
+    /* font sizes */
+    --fs-title-1:clamp(1.3rem , 5vw , 4rem);
 
     /* colors */
 
@@ -31,7 +39,7 @@
 
     --clr-dark-100:#191e22;
     --clr-dark-50:#252e30;
-    --clr-dark-25:#555;
+    --clr-dark-75:#555;
     --clr-dark-25:#6a6e71;
 }
 
@@ -43,6 +51,7 @@
 
 body{
     font-family: var(--ff-primary);
+    overflow-x: hidden;
 }
 
 /*********** reset & element *********/
@@ -61,16 +70,63 @@ a{
     color:inherit;
 }
 
+button {
+    background: transparent;
+    border: none;
+    outline-color: transparent;
+    font-weight: inherit;
+}
+
 button,i,.clickable{
     cursor: pointer;
 }
 
+i,.fa,.fas,.fa-solid{
+    font-family:"Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h2:not(.intro__heading),h3,h4{
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
+
+p:not(.special-p){
+    font-size: .959rem;
+    line-height: 1.7;
+    color: var(--clr-dark-25);
+}
+
 /*********** classes *********/
+.bold{
+    font-weight: var(--fw-bold);
+}
+.relative{
+    position: relative;
+}
+.center{
+    text-align: center;
+}
+
 .flex{
     display: flex;
 }
 .js-between{
     justify-content: space-between;
+}
+.js-center{
+    justify-content:center;
+}
+.align-center{
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
 }
 
 .bg-hight{
@@ -81,6 +137,9 @@ button,i,.clickable{
     background:var(--clr-light-50);
 }
 
+.active{
+    color: var(--clr-primary);
+}
 /********* components ********/
 .container,
 .container-fluid{
@@ -135,4 +194,62 @@ button,i,.clickable{
     color:var(--clr-primary);
     border:3px solid var(--clr-primary);
     background:transparent;
+}
+
+
+/*************** animation classes ************/
+.transformers-container{
+    overflow: hidden;
+}
+
+/********** intro *************/
+
+/* intro animation class */
+h2.intro__heading-animation{
+    animation: scalable-intro-anime .8s ease-in-out 1;
+}
+
+/********** rotate *************/
+
+.rotate{
+    transition: .3s transform ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration:.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.rotate-to-right{
+    transform: translateX(-50%)rotateZ(-360deg);
+}
+/* rotate animation class */
+.rotate-home{
+    animation-name: rotate-home;
+}
+
+/*********  move ********/
+
+.move{
+    transition: 1.2s transform ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+
+.move-to-right{
+    transform: translateX(-100%);
+}
+
+.move-to-left{
+    transform: translateX(100%);
+}
+
+.move-to-top{
+    transform: translateY(50%);
+}
+
+/* move animation class */
+
+.back-home{
+    animation-name: back-home ;
 }
