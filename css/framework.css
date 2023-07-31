@@ -101,6 +101,14 @@ h2:not(.intro__heading),h3,h4{
     color:var(--clr-dark-25 , #555);
 }
 
+h2:not(.some-info h2 , header h2){
+    width:100%;
+    max-width: 600px;
+    margin-bottom:2rem !important; 
+    padding-bottom:1rem;
+    border-bottom: 2px solid var(--clr-primary , #2dcc70);
+}
+
 p:not(.special-p) , blockquote{
     font-size: .959rem;
     line-height: 1.7;
