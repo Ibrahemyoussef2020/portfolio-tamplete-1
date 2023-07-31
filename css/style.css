@@ -506,3 +506,28 @@ blockquote span:last-of-type{
 .solid-pag {
     background: var(--clr-primary , #2dcc70);
 }
+
+/******************* portfolio ******************/
+
+.portfolio h2{
+    margin-left:var(--xs-rem , 1rem);
+    margin-bottom: -5px; 
+    padding-bottom:10px;
+    border-bottom: 2px solid var(--clr-primary , #2dcc70);
+}
+
+.container--img{
+    gap:5px;
+    background:#fff;
+    overflow:hidden;
+}
+
+
+.container--img img{
+    display: block;
+    max-width:100%;
+    padding: 5px;
+    margin: 0 auto;
+    border: .3px double #ccc;
+    background: #fefefe;
+}

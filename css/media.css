@@ -23,6 +23,12 @@
         flex-direction: row;
     }
 
+    /* portfolio */
+
+    .container--img img{
+        max-width:250px;
+    }
+
 }
 
 @media (min-width:992px){
