@@ -1,13 +1,6 @@
-/******  nav *******/
-/* list */
-const linksMenu = document.querySelector('.links__menu'),
-        linksList = document.querySelector('.links__list')
 
-linksMenu.addEventListener('click', e =>{
-    linksList.classList.toggle('visible-list');
-})
 
-/* intro */
+/************ Intersection Observer  ************* */
 
 const transformers = document.querySelectorAll('.transformers');
 
@@ -15,8 +8,6 @@ const observer = new IntersectionObserver(
     entries => {
         entries.forEach(entry => {
             const element = entry.target;
-            //console.log(element.className);
-            //console.log(element);
             
             if (element.classList.contains('intro__heading')) {
                 element.classList.toggle('intro__heading-animation', entry.isIntersecting)
@@ -42,7 +33,19 @@ transformers.forEach(transformer => {
 })
 
 
-/* testimonials-container */
+/**************** list ***********/
+
+const linksMenu = document.querySelector('.links__menu'),
+        linksList = document.querySelector('.links__list')
+
+linksMenu.addEventListener('click', e =>{
+    linksList.classList.toggle('visible-list');
+})
+
+
+
+/************* testimonials-container *********/
+
 
 const slider = document.querySelector('.testimonials-container'),
 pagination_wrapper =  document.querySelector('.pagination-wrapper'),

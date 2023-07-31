@@ -125,7 +125,7 @@ p:not(.special-p) , blockquote{
 
 /*********** classes *********/
 .bold{
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-bold , 700);
 }
 .relative{
     position: relative;
@@ -151,7 +151,7 @@ p:not(.special-p) , blockquote{
 }
 
 .bg-hight{
-    background: var(--clr-light-100);
+    background: var(--clr-light-100 , #fff);
 }
 
 .bg-gray{
@@ -168,7 +168,7 @@ p:not(.special-p) , blockquote{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: var(--md-rem ) auto;
-    gap: var(--sm-rem) var(--xs-rem);
+    gap: var(--sm-rem) var(--xs-rem , 1rem);
 }
 
 .container{
@@ -185,7 +185,7 @@ p:not(.special-p) , blockquote{
 }
 
 .btn{
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-bold , 700);
     color:inherit;
     outline-color: transparent;
     border: none;
@@ -199,13 +199,13 @@ p:not(.special-p) , blockquote{
 
 .btn--primary-outlined:hover,
 .btn--primary-outlined::selection{
-    color: var(--clr-light-100);
+    color: var(--clr-light-100 , #fff);
     border:3px solid var(--clr-primary);
     background:var(--clr-primary);
 }
 
 .btn--primary-solid{
-    color: var(--clr-light-100);
+    color: var(--clr-light-100 , #fff);
     border:3px solid var(--clr-primary);
     background:var(--clr-primary);
 }
