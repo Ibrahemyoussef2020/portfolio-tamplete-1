@@ -40,3 +40,37 @@ const observer = new IntersectionObserver(
 transformers.forEach(transformer => {
     observer.observe(transformer)
 })
+
+
+/* testimonials-container */
+
+const slider = document.querySelector('.testimonials-container'),
+pagination_wrapper =  document.querySelector('.pagination-wrapper'),
+    pag_spans =  document.querySelectorAll('.pag');
+
+
+
+pagination_wrapper.addEventListener('click' , e =>{
+
+    pag_spans.forEach(pag =>{
+
+        if (pag.classList.contains('solid-pag') && pag.className !== e.target.className) {
+
+            pag.classList.remove('solid-pag');
+        }
+    })
+
+    if (e.target.classList.contains('pag')) {
+        e.target.classList.add('solid-pag')
+    }
+    
+    if (e.target.classList.contains('pag__1')) {
+        slider.style.transform = 'translateX(0)';
+    }
+    else if (e.target.classList.contains('pag__2')) {
+        slider.style.transform = 'translateX(-100%)'
+    }
+    else if (e.target.classList.contains('pag__3')) {
+        slider.style.transform = 'translateX(-200%)'
+    }
+})

@@ -101,7 +101,7 @@ h2:not(.intro__heading),h3,h4{
     color:var(--clr-dark-25 , #555);
 }
 
-p:not(.special-p){
+p:not(.special-p) , blockquote{
     font-size: .959rem;
     line-height: 1.7;
     color: var(--clr-dark-25);
@@ -201,6 +201,14 @@ p:not(.special-p){
     background:transparent;
 }
 
+.sr-only{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
 
 /*************** animation classes ************/
 .transformers-container{

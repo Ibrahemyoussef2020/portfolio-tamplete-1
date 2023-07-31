@@ -396,3 +396,113 @@
     max-width: 300px;
     margin: var(--xs-rem , 1rem) auto var(--xs-rem , 1rem) 0 ;
 }
+
+/**************** testimonial ****************/
+
+.testimonials{
+    padding-top:1rem;
+    overflow: hidden;
+    background: var(--clr-light-50 , #f2f2f2);
+}
+
+.testimonials-container{
+    transition: transform 1.2s ease-in-out;
+    gap: 5rem;
+}
+
+.testimonials__articles{
+    max-width: 100%;
+}
+
+.testimonial{
+    min-width: 100%;
+    padding:.7rem;
+    padding-right:.7rem;
+}
+
+.testimonial__info{
+    padding-bottom: 2rem;
+    border-bottom: .5px solid #333;
+}
+
+.testimonial__info{
+    height:70px;
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+}
+.testimonial__info img{
+    height:80px;
+    padding: 5px;
+    border: .3px solid #eee;
+    border-radius: 50%;
+    background: var(--clr-light-50);
+
+    aspect-ratio: 1 / 1;
+    -webkit-aspect-ratio: 1 / 1;
+    -moz-aspect-ratio: 1 / 1;
+    -o-aspect-ratio: 1 / 1;
+}
+
+.testimonial__info h3{
+    font-size:1.2rem;
+    margin-bottom: .3rem;
+}
+
+.testimonial__info span{
+    padding-left: .5rem;
+    font-size:.858rem;
+    color: var(--clr-secondary, #252e30);
+    color: var(--clr-primary , #2dcc70);
+    font-weight: var(--fw-bold , 700);
+}
+
+/* blockquote */
+
+.testimonials blockquote{
+    line-height:2rem;
+    margin-top: var(--sm-rem , 1.5rem);
+    color: var(--clr-secondary , #252f31);
+}
+
+blockquote span  {
+    display: inline-block;
+    font-size: var(--mds-rem , 2.5rem);
+    font-weight: var(--fw-bold , 700);
+    line-height: .5;
+    color: var(--clr-primary , #2dcc70);
+}
+
+blockquote span:last-of-type{
+    position: relative;
+    top:-15px;
+    left:0;
+    transform: rotateX(180deg);
+}
+
+
+.testimonials blockquote ,.testimonial__info{
+    max-width: 600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* pagination */
+
+.pagination-wrapper{
+    width:100px;
+    margin: var(--sm-rem , 1.5rem) auto;
+}
+
+.pagination-wrapper > span{
+    height:20px;
+    width:20px;
+    border:2px solid var(--clr-primary , #2dcc70);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out ;
+}
+
+.solid-pag {
+    background: var(--clr-primary , #2dcc70);
+}
