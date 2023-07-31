@@ -1,47 +1,4 @@
-:root{
 
-    /* units */
-
-    --cn-gap:25px;
-    --cnf-gap:10px;
-
-    --xs-rem:1rem;
-    --sm-rem:1.5rem;
-    --md-rem:2rem;
-    --lg-rem:3rem;
-    --xl-rem:4rem;
-
-    /* min width */
-
-    --width-3:100px;
-    --width-2:min(350px,100%);
-
-    /* z-index */
-
-    --index-1:1;
-    --index-2:2;
-    --index-3:3;
-
-    /* font weight */
-    --fw-bold:700;
-    /* font family */
-    --ff-primary:'Roboto', sans-serif;
-    /* font sizes */
-    --fs-title-1:clamp(1.3rem , 5vw , 4rem);
-
-    /* colors */
-
-    --clr-primary:#2dcc70;
-    --clr-secondary:#252f31;
-
-    --clr-light-100:#fff;
-    --clr-light-50:#f2f2f2;
-
-    --clr-dark-100:#191e22;
-    --clr-dark-50:#252e30;
-    --clr-dark-75:#555;
-    --clr-dark-25:#6a6e71;
-}
 /******** header **********/
 
 
