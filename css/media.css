@@ -26,7 +26,17 @@
     /* portfolio */
 
     .container--img img{
-        max-width:250px;
+        width:250px;
+    }
+
+    /* contact */
+
+    .contact .container{
+        flex-direction: row;
+    }
+
+    .contact hr{
+        display: none;
     }
 
 }

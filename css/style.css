@@ -49,7 +49,6 @@
 
 .slider{
     height: calc(100vh - 60px);
-    background: red;
     padding:50px;
 }
 
@@ -511,9 +510,6 @@ blockquote span:last-of-type{
 
 .portfolio h2{
     margin-left:var(--xs-rem , 1rem);
-    margin-bottom: -5px; 
-    padding-bottom:10px;
-    border-bottom: 2px solid var(--clr-primary , #2dcc70);
 }
 
 .container--img{
@@ -525,9 +521,78 @@ blockquote span:last-of-type{
 
 .container--img img{
     display: block;
-    max-width:100%;
+    width:100%;
     padding: 5px;
     margin: 0 auto;
     border: .3px double #ccc;
     background: #fefefe;
 }
+
+
+/********************* contact ***********/
+
+.contact{
+    padding: 2rem .5rem;
+    margin-bottom: 0;
+    background: var(--clr-secondary , #252f31);
+}
+
+.contact .container{
+    flex-direction: column;
+}
+
+.contact__hr{
+    padding:5px;
+    width: 70%;
+    max-width: 500px;
+    margin: 2rem auto 2rem 0;
+    border: none;
+    border-radius: 5px;
+    background: var(--clr-light-100,#fff);
+}
+
+.contact .container > *{
+    flex: 1;
+}
+
+.contact form {
+    color: var(--clr-light-100);
+}
+
+.contact p {
+    max-width:350px;
+    margin-bottom: .5rem;;
+}
+
+.contact p:first-of-type{
+    margin:1rem 0 var(--sm-rem, 1.5rem) 0;
+}
+
+p.heading-content span{
+    font-weight: var(--fw-bold , 900);
+    color: var(--clr-light-100 , #fff);
+    margin-right:var(--xs-rem,1rem);
+}
+
+.contact p.email{
+    margin-top: var(--sm-rem , 1.5rem);
+}
+
+.contact fieldset{
+    margin-bottom: .5rem;
+    border: none;
+}
+
+.contact textarea , 
+.contact input{
+    width: 100%;
+    line-height: 1.5rem;
+    margin-top: .5rem;
+    border: .5px solid var(--clr-dark-100);
+    outline:none;
+    color: var(--clr-light-100 , #fff);
+    background: var(--clr-dark-50);
+    
+    resize: none;
+}
+
