@@ -56,6 +56,24 @@ html{
     -o-scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color:var(--clr-light-50);
+}
+
+html::-webkit-scrollbar {
+    width: 12px;
+    background-color:var(--clr-light-50);
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color:var(--clr-primary , #2dcc70);
+}
+
+
 body{
     font-family: var(--ff-primary);
     overflow-x: hidden;

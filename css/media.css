@@ -26,7 +26,7 @@
     /* portfolio */
 
     .container--img img{
-        width:250px;
+        width:200px;
     }
 
     /* contact */
@@ -72,6 +72,12 @@
 
         .about__picture{
             max-width: 33%;
+        }
+
+        /* portfolio */
+
+        .container--img img{
+            width:250px;
         }
 }
 
