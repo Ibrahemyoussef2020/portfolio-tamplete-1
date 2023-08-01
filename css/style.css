@@ -501,12 +501,21 @@ p.heading-content span{
 /******************* footer ***************/
 
 .main-footer{
-    min-height:100px;
     padding-left: 10px;
-    display: flex;
-    align-items: center;
-    gap:var(--xs-rem , 1rem);
     background: var(--clr-dark-100 , #191e22);
+    overflow: hidden;
+}
+
+p.main-footer__copyright{
+    padding-top:.5rem;
+    font-size:11px;
+    color:var(--clr-dark-25 , #555);
+    text-transform: uppercase;
+}
+
+.main-footer__social{
+    padding:.5rem 0;
+    gap:var(--xs-rem , 1rem);
 }
 
 .main-footer img{
