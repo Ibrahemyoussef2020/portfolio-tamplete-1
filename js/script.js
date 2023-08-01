@@ -19,7 +19,7 @@ const observer = new IntersectionObserver(
                 element.classList.toggle('rotate-home', entry.isIntersecting)
             }
 
-           // if (entry.isIntersecting) observer.unobserve(element)  
+            if (entry.isIntersecting) observer.unobserve(element)  
         }
             
         )
