@@ -220,8 +220,7 @@
     max-width: 300px;
 }
 
-.skill div{
-    position: relative;
+.skill__track{
     height:var(--xs-rem , 1rem);
     padding-right:var(--xs-rem , 1rem);
     margin-bottom: 1rem;
@@ -232,53 +231,13 @@
     overflow: hidden;
 }
 
-.skill div:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: var(--clr-primary , #2dcc70);
-}
-
-.skill div span{
-    position: absolute;
-    top:0;
+.skill__thumb{
+    padding-right: 10px;
     font-size: .828rem;
+    text-align: end;
+    border-radius: inherit;
     color: var(--clr-light-100,#fff);
-    z-index: var(--index-2 , 2);
-}
-
-
-.skill--html div:after{
-    width: 110%;
-}
-.skill--html div span{
-    left:90%;
-}
-
-
-.skill--css div:after{
-    width: 110%;
-}
-.skill--css div span{
-    left:90%;
-}
-
-
-.skill--photoshop div:after{
-    width: 70%;
-}
-.skill--photoshop div span{
-    left: 60%;
-}
-
-
-.skill--jquery div:after{
-    width:60%;
-}
-.skill--jquery div span{
-    left:50%;
+    background: var(--clr-primary , #2dcc70);
 }
 
 
