@@ -449,6 +449,10 @@ blockquote span:last-of-type{
     flex-direction: column;
 }
 
+.contact h2{
+    color: var(--clr-light-100 , #fff);
+}
+
 .contact__hr{
     padding:5px;
     width: 70%;
@@ -491,10 +495,15 @@ p.heading-content span{
     border: none;
 }
 
+.contact fieldset:last-of-type{
+    margin-top:-.5rem;
+}
+
 .contact textarea , 
 .contact input{
     width: 100%;
     line-height: 1.5rem;
+    padding: .5rem;
     margin-top: .5rem;
     border: .5px solid var(--clr-dark-100);
     outline:none;
@@ -502,6 +511,13 @@ p.heading-content span{
     background: var(--clr-dark-50);
 
     resize: none;
+}
+
+.contact button{
+    padding:.5rem;
+    font-size:.828rem;
+    color: var(--clr-light-100);
+    background:var(--clr-dark-100 , #000);
 }
 
 /******************* footer ***************/
