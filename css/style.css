@@ -55,7 +55,6 @@
     background:var(--clr-secondary , #252e30);
     color: var(--clr-light-100 , #fff);
     height: 60px;
-    cursor: grab;
 }
 
 .navbar .container{
@@ -65,28 +64,6 @@
     margin:0 auto var(--md-rem , 2rem);
 }
 
-
-.navbar::before{
-    content: '';
-    position: absolute;
-    top:-20px;
-    left: 0;
-    width:70%;
-    min-width: 270px;
-    height: 60px;
-    background: var(--clr-secondary , #252e30);
-    border-top-right-radius: 50%;
-    border-radius: 50%;
-    transition: all .5s ease-in-out;
-    z-index:var(--index-1 , 1);
-}
-
-.navbar:hover::before{
-    height: 90px;
-    max-width: 50%;
-    top: -35px;
-    left: 25%;
-}
 
 .logo{
     position: relative;
@@ -100,6 +77,7 @@
 
 .links__menu{
     position: relative;
+    color: var(--clr-light-100,#fff);
     z-index: var(--index-3,3);
 }
 
