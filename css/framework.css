@@ -242,13 +242,13 @@ h2.intro__heading-animation{
 
 .rotate{
     animation-fill-mode: forwards;
-    animation-duration:1s;
+    animation-duration:.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
 
 .rotate-to-right{
-    transform: translateX(-50%)rotateZ(-360deg);
+    transform: translateX(-100%)rotateZ(-90deg);
 }
 
 /* rotate animation class */

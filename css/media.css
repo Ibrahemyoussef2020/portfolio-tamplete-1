@@ -80,6 +80,10 @@
         --cn-gap:250px;
         --cnf-gap:63px;
     }
+
+    .about__sm-article p{
+        margin-top: -1.5rem;
+    }
 }
 
 @media (min-width:1400px){

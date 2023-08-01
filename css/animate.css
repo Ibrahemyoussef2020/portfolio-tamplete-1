@@ -20,17 +20,12 @@
 
 @keyframes rotate-home {
     0%{
-        transform: translateX(-38%)rotateZ(-180deg);
+        transform: translateX(-50%)rotateZ(-90deg); 
     }
-    25%{
-        transform: translateX(-26%)rotateZ(-90deg);
-    }
-    50%{
-        transform: translateX(-14%)rotateZ(-30deg);
-    }
+
     100%{
-        transform: translateX(0)rotateZ(0deg);
-    } 
+        transform: translateX(0%)rotateZ(0deg); 
+    }
 }
 
 
