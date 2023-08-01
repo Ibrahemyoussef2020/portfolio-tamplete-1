@@ -15,13 +15,6 @@
     }
 }
 
-/* back home */
-
-@keyframes back-home {
-    to{
-        transform: translate(0);
-    }
-}
 
 /* rotate home */
 
@@ -37,6 +30,15 @@
     }
     100%{
         transform: translateX(0)rotateZ(0deg);
+    } 
+}
+
+
+/* back home */
+
+@keyframes back-home {
+    to{
+        transform: translate(0);
     }
 }
 

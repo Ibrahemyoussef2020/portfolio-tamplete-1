@@ -241,7 +241,6 @@ h2.intro__heading-animation{
 /********** rotate *************/
 
 .rotate{
-    transition: 1s transform ease-in-out;
     animation-fill-mode: forwards;
     animation-duration:1s;
     animation-iteration-count: 1;
@@ -251,18 +250,43 @@ h2.intro__heading-animation{
 .rotate-to-right{
     transform: translateX(-50%)rotateZ(-360deg);
 }
+
 /* rotate animation class */
 .rotate-home{
     animation-name: rotate-home;
 }
 
+/************ scale ***********/
+
+.scale{
+    animation-fill-mode: forwards;
+    animation-duration:.2s;
+    animation-iteration-count: 1;
+
+    transform: scaleY(.5);
+    transform-origin: bottom center;
+}
+
+/* scale animation class */
+
+.scale-home{
+    animation-name: scale-home;
+}
+
 /*********  move ********/
 
 .move{
-    transition: 1.2s transform ease-in-out;
     animation-fill-mode: forwards;
     animation-duration: 1.2s;
     animation-iteration-count: 1;
+}
+
+.move-to-top{
+    transform: translateY(50%);
+}
+
+.move-to-bottom{
+    transform: translateY(-50%);
 }
 
 .move-to-right{
@@ -273,9 +297,23 @@ h2.intro__heading-animation{
     transform: translateX(100%);
 }
 
-.move-to-top{
-    transform: translateY(50%);
+
+.move-to-top-left{
+    transform:translate(100%,100%);
 }
+
+.move-to-top-right{
+    transform: translate(-100%,100%);;
+}
+
+.move-to-bottom-left{
+    transform:translate(100%,-100%);
+}
+
+.move-to-bottom-right{
+    transform:translate(-100%,-100%);
+}
+
 
 /* move animation class */
 

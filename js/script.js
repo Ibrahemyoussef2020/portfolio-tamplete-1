@@ -11,7 +11,6 @@ const observer = new IntersectionObserver(
             
             if (element.classList.contains('intro__heading')) {
                 element.classList.toggle('intro__heading-animation', entry.isIntersecting)
-                
             }
             else if(element.classList.contains('move')){
                 element.classList.toggle('back-home', entry.isIntersecting)
@@ -19,6 +18,8 @@ const observer = new IntersectionObserver(
             else if(element.classList.contains('rotate')){
                 element.classList.toggle('rotate-home', entry.isIntersecting)
             }
+
+           // if (entry.isIntersecting) observer.unobserve(element)  
         }
             
         )
