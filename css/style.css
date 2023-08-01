@@ -268,7 +268,7 @@
     height:5px;
     width: 70%;
     min-width:300px;
-    margin-bottom:var(--lg-rem, 4rem);
+    margin-bottom:var(--xl-rem, 4rem);
     border: none;
     border-radius:10px;
     background:var(--clr-primary,#2dcc70);
