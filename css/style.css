@@ -7,15 +7,9 @@
 .slider{
     height: calc(100vh - 60px);
     padding:50px;
-}
-
-.slider .slider_picture{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: var(--index-1 , 1);
+    background-image:url('../images/slider.jpg');
+    background-size:cover;
+    background-position:50% 50%;
 }
 
 .intro{
