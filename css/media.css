@@ -2,8 +2,8 @@
 
 @media (min-width:768px){
     :root{
-        --cn-gap:100px;
-        --cnf-gap:25px;
+        --container-margin-x:100px;
+        --container-fluid-margin-x:25px;
     }
 
     /* about */
@@ -43,8 +43,8 @@
 
 @media (min-width:992px){
     :root{
-        --cn-gap:150px;
-        --cnf-gap:25px;
+        --container-margin-x:150px;
+        --container-fluid-margin-x:25px;
     }
 
         /* header */
@@ -83,8 +83,8 @@
 
 @media (min-width:1200px){
     :root{
-        --cn-gap:250px;
-        --cnf-gap:63px;
+        --container-margin-x:250px;
+        --container-fluid-margin-x:63px;
     }
 
     .about__sm-article p{
@@ -94,7 +94,7 @@
 
 @media (min-width:1400px){
     :root{
-        --cn-gap:350px;
-        --cnf-gap:88;
+        --container-margin-x:350px;
+        --container-fluid-margin-x:88;
     }
 }

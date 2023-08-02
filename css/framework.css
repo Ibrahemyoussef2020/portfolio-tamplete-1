@@ -2,8 +2,8 @@
 
     /* units */
 
-    --cn-gap:25px;
-    --cnf-gap:10px;
+    --container-margin-x:25px;
+    --container-fluid-margin-x:10px;
 
     --xs-rem:1rem;
     --sm-rem:1.5rem;
@@ -18,9 +18,9 @@
 
     /* z-index */
 
-    --index-1:1;
-    --index-2:2;
-    --index-3:3;
+    --index-low:1;
+    --index-medium:2;
+    --index-large:3;
 
     /* font weight */
     --fw-bold:700;
@@ -190,11 +190,11 @@ p:not(.special-p) , blockquote{
 }
 
 .container{
-    width: calc(100% - var(--cn-gap));
+    width: calc(100% - var(--container-margin-x));
 }
 
 .container-fluid{
-    width: calc(100% - var(--cnf-gap));
+    width: calc(100% - var(--container-fluid-margin-x));
 }
 
 .flex-min-w{
